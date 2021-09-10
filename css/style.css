@@ -1,0 +1,321 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+    background: linear-gradient(to right, #414345, #232526);
+    font-family: 'Cabin', sans-serif;
+    height: 100%;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4,1fr);  
+    grid-template-rows: 10% 80% 10%; 
+    grid-template-areas: "header header nav nav"
+                        "main main main main"
+                        "footer footer footer footer"
+    ;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo{
+    width: 10%;
+    padding-top:10px;
+    padding-left: 1%;
+    
+}
+
+a{
+    color:#E6A767;
+    text-decoration: none;
+}
+
+nav{
+    grid-area: nav;
+}
+
+.flex-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav li{
+    list-style-type: none;
+    font-family: 'Lobster', cursive;
+    font-size: medium;
+    text-decoration: none;
+    margin: 2%;
+}
+
+nav li a{
+    color:#C4823E;
+    transition: all 0.8s;
+}
+
+nav li a:hover{
+    color:rgb(235, 230, 229);
+    background-color: #C4823E;
+}
+
+main{
+    grid-area: main;
+    padding:0% 8% 2% 8%;
+    height: 100%;
+}
+
+h1{
+    color: #C4703E;
+    font-size:350%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    height: 15%;
+}
+
+h3{
+    color:#C4823E;
+    font-size:200%;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    height: 15%;
+}
+h4{
+    color: burlywood;;
+    font-size:150%;
+    text-align: center;
+    height: 15%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    
+}
+
+p{
+    color:burlywood;
+    padding-bottom: 1%;
+}
+
+footer{
+    width: 100%;
+    grid-area: footer;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+footer .firma{
+    padding-left: 1%;
+    width: 33%; 
+}
+
+footer .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 33%; 
+    height: 100%;
+}
+
+footer .shortContact{
+    width: 34%; 
+    padding-right: 1%;
+    text-align: right;
+}
+
+.socials{
+    width: 15%;
+    height: 50%;
+    padding-bottom: 1%;
+}
+
+.socials img{
+    width: 60%;
+    height: 90%;
+    color:#E6A767;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    padding-top: 2%;
+}
+.flexContent{
+    text-align: justify;
+    font-size: 110%;
+    width: 60%; 
+    padding-left: 1%;
+}
+
+.flexContentImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2%;
+    width: 40%;
+}
+
+.burgers-principal{
+    width: 85%;
+    height: 80%;
+}
+
+.formu{
+    font-family: 'Lobster', cursive;
+    padding-top: 2%;
+}
+
+label{
+    color:#E6A767;
+}
+
+.formOpt{
+    margin-bottom: 5%;
+}
+
+.checkbox{
+    margin-left: 10px;
+}
+
+.boton{
+    width: 49%;
+    font-size: medium;
+    font-family: 'Lobster', cursive;
+    color:rgb(49, 39, 39);
+    background-color: #C4823E;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+.aboutUs{
+    text-align: justify;
+    font-size: 110%;
+    width: 100%; 
+}
+
+.flex-us-photo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2%;
+    width: 100%;
+}
+
+.flex-us-photo{
+    width: 48%;
+    height:78%;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+
+.adress-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 15% 0 10%;
+    padding: 1% 0 1% 2%;
+    border: solid 3px #C4823E;
+}
+
+.map{
+    border:0;
+    margin: 4% 15% 0 10%;
+}
+
+/* TABLA MENU*/
+
+.flex-table{
+    display:flex;
+    flex-direction: column;
+    border: dashed 7px #E6A767;
+    width: 100%;
+    height: 70%;
+}
+
+.th{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.th p{
+    color: #C4823E;
+    font-family: 'Lobster', cursive;
+    font-size: 112%;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: burlywood;
+    text-align: center;
+    height: 45%;
+}
+
+.fotos{
+    width: 30%;
+}
+
+.fotos img{
+    padding: 0% 0 2% 1%;
+    width: 50%;
+    height: 90%;
+    transition: all 1s;
+}
+
+.fotos img:hover{
+    transform: scale(1.8);
+}
+
+.nombre{
+    width: 20%;
+}
+
+.ingredientes{
+    width: 30%;
+}
+
+.precio{
+    width: 10%;
+}

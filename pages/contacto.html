@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Burgerly</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!--HEADER Y LOGO-->
+        <header>
+            <div class="logo"><a href="../index.html"><img src="" alt="Logo"></a></div>
+        </header>
+        <!--MENU DE NAVEGACION-->
+        <nav>
+            <ul class="flex-ul">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--CONTENIDO PRINCIPAL-->
+        <main>
+            <div class="contacto">
+                <h1>Contactanos</h1>
+                <h3>Dejanos una opinion, reclamo o sugerencia en el siguiente formulario</h3>
+                <form class="formu" action="#">
+                    <div class="formOpt"><label for="">Nombre: <input type="text" name="nombre" id="" placeholder="Ingrese su nombre"></label></div>
+                    <div class="formOpt"><label for="">Apellido: <input type="text" name="apellido" id="" placeholder="Ingrese su apellido"></label></div>          
+                    <div class="formOpt"><label for="">Email: <input type="email" name="email" id="" placeholder="Ingrese su email"></label></div>
+                    <div class="formOpt"><label for="">Motivo del contacto: </label><select name="tipoContacto" id="">
+                        <option value="1">Reclamo</option>
+                        <option value="2">Opinion</option>
+                        <option value="3">Solicitud</option>
+                    </select></div>
+                    <textarea name="" id="" cols="30" rows="10" class="formOpt"></textarea>
+                    <div class="formOpt"><label>¿Desea recibir futuras novedades?<input type="checkbox" name="novedades" id="" class="checkbox"></label></div>
+                    <input type="submit" value="Enviar" class="boton">
+                    <input type="reset" value="Reestablecer" class="boton">
+                </form>
+            </div>
+        </main>   
+        <!--PIE DE PAGINA--> 
+        <footer>
+            <div class="firma"><p>Diseñado por Franco Nicolas Silvestro<br> Sin fines de Lucro</p></div>
+            <div class="redes" >
+                <a href="#" class="socials"><img src="../images/instagram.png" alt="Instagram" ></a>
+                <a href="#" class="socials"><img src="../images/twitter.png" alt="Twitter" ></a>
+                <a href="#" class="socials"><img src="../images/facebook.png" alt="Facebook"></a>
+            </div>
+            <div class="shortContact"><p>Direccion: Avenida Siempre Viva 123<br>Telefono: 4213-1456 </p></div>
+        </footer>
+    </div>
+</body>
+</html>
