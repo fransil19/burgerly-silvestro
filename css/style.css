@@ -222,15 +222,15 @@ label{
 .flex-us-photo-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding-bottom: 2%;
     width: 100%;
 }
 
 .flex-us-photo{
-    width: 48%;
-    height:78%;
+    width: 40%;
+    height: 90%;
 }
 
 .flex-row{
