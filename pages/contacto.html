@@ -12,51 +12,91 @@
     <title>Burgerly</title>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container-fluid">
         <!--HEADER Y LOGO-->
-        <header>
-            <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="Logo"></a></div>
-        </header>
-        <!--MENU DE NAVEGACION-->
-        <nav>
-            <ul class="flex-ul">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="row header">
+            <header class="col-lg-3 col-md-3 col-xs-12 col-sm-4">
+                <div class="logo"><a href="index.html"><img src="../images/logo.png" alt="Logo"></a></div>
+            </header>
+            <!--MENU DE NAVEGACION-->
+            <nav class="col-lg-9 col-md-9 col-xs-12 col-sm-8">
+                    <ul class="flex-ul">
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+            </nav>
+        </div>
         <!--CONTENIDO PRINCIPAL-->
-        <main>
+        <main class="main">
             <div class="contacto">
                 <h1>Contactanos</h1>
                 <h3>Dejanos una opinion, reclamo o sugerencia en el siguiente formulario</h3>
-                <form class="formu" action="#">
+                <form class="row gy-2 gx-3 justify-content-center align-items-center formu">
+                    <div class="col-auto">
+                      <label class="visually-hidden" for="autoSizingInput">Nombre:</label>
+                      <input type="text" class="form-control" name="nombre" id="autoSizingInput" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInput">Apellido:</label>
+                        <input type="text" class="form-control" name="apellido" id="autoSizingInput" placeholder="Ingrese su apellido">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInput">Email:</label>
+                        <input type="email" class="form-control" name="email" id="autoSizingInput" placeholder="Ingrese su email">
+                    </div>
+                    <div class="col-auto">
+                      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                      <select class="form-select" id="autoSizingSelect">
+                        <option value="1">Reclamo</option>
+                        <option value="2">Opinion</option>
+                        <option value="3">Solicitud</option>
+                      </select>
+                    </div>
+                    <div class="col-auto">
+                        <textarea class="form-control" placeholder="Escriba aquí su comentario" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea"></label>
+                      </div>
+                    <div class="col-auto">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="novedades" id="autoSizingCheck">
+                        <label class="form-check-label" for="autoSizingCheck">
+                            ¿Desea recibir futuras novedades?
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <button type="submit" class="btn btn-primary boton">Enviar</button>
+                    </div>
+                    <div class="col-auto">
+                        <button type="reset" class="btn btn-primary boton">Reestablecer</button>
+                    </div>
+                  </form>
+                <!-- <form class="formu" action="#">
                     <div class="formOpt"><label for="">Nombre: <input type="text" name="nombre" id="" placeholder="Ingrese su nombre"></label></div>
                     <div class="formOpt"><label for="">Apellido: <input type="text" name="apellido" id="" placeholder="Ingrese su apellido"></label></div>          
                     <div class="formOpt"><label for="">Email: <input type="email" name="email" id="" placeholder="Ingrese su email"></label></div>
                     <div class="formOpt"><label for="">Motivo del contacto: </label><select name="tipoContacto" id="">
-                        <option value="1">Reclamo</option>
-                        <option value="2">Opinion</option>
-                        <option value="3">Solicitud</option>
+                        
                     </select></div>
                     <textarea name="" id="" cols="30" rows="10" class="formOpt"></textarea>
                     <div class="formOpt"><label>¿Desea recibir futuras novedades?<input type="checkbox" name="novedades" id="" class="checkbox"></label></div>
                     <input type="submit" value="Enviar" class="boton">
                     <input type="reset" value="Reestablecer" class="boton">
-                </form>
+                </form> -->
             </div>
         </main>   
         <!--PIE DE PAGINA--> 
-        <footer>
-            <div class="firma"><p>Diseñado por Franco Nicolas Silvestro</p><p>Sin fines de Lucro</p></div>
-            <div class="redes" >
+        <footer class="row footer">
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 signature"><p>Diseñado por Franco Nicolas Silvestro</p><p>Sin fines de Lucro</p></div>
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 networks" >
                 <a href="#" class="socials"><img src="../images/instagram.png" alt="Instagram" ></a>
                 <a href="#" class="socials"><img src="../images/twitter.png" alt="Twitter" ></a>
                 <a href="#" class="socials"><img src="../images/facebook.png" alt="Facebook"></a>
             </div>
-            <div class="shortContact"><p>Direccion: Avenida Siempre Viva 123</p><p>Telefono: 4213-1456 </p></div>
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 shortContacts"><p>Direccion: Avenida Siempre Viva 123</p><p>Telefono: 4213-1456 </p></div>
         </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->

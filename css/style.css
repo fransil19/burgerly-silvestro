@@ -27,6 +27,18 @@ header{
 
 }
 
+.header{
+    height: 10vh;
+}
+
+.main{
+    height: 80vh;
+}
+
+.footer{
+    height: 10vh;
+}
+
 .logo{
     width: 25%;
     padding-left: 1%;
@@ -83,7 +95,6 @@ h1{
     font-size:350%;
     text-align: center;
     font-family: 'Lobster', cursive;
-    height: 15%;
 }
 
 h3{
@@ -91,7 +102,6 @@ h3{
     font-size:200%;
     text-align: center;
     font-family: 'Lobster', cursive;
-    height: 15%;
 }
 h4{
     color: burlywood;;
@@ -170,7 +180,7 @@ footer .shortContact{
 section{
     display: flex;
     flex-direction: row;
-    height: 70%;
+    height: 75%;
     padding-top: 2%;
 }
 
@@ -178,7 +188,6 @@ section{
     text-align: justify;
     font-size: 90%;
     padding-left: 1%;
-    height: 100%;
 }
 
 .flexContentImage{
@@ -198,7 +207,7 @@ section{
 
 .formu{
     font-family: 'Lobster', cursive;
-    padding-top: 2%;
+    margin-top: 10%;
 }
 
 label{
@@ -214,11 +223,11 @@ label{
 }
 
 .boton{
-    width: 49%;
     font-size: medium;
     font-family: 'Lobster', cursive;
     color:rgb(49, 39, 39);
     background-color: #C4823E;
+    border-color: #C4823E;
 }
 
 .contacto{
@@ -357,6 +366,18 @@ label{
     header{
         justify-content: center;
     }
+
+    .header{
+        height: 20vh;
+    }
+    
+    .main{
+        height: 100vh;
+    }
+    
+    .footer{
+        height: 10vh;
+    }
     
     .flex-ul{
         justify-content:center;
@@ -385,6 +406,10 @@ label{
         padding-bottom: 1%;
     }
 
+    section{
+        height: 90%;
+    }
+
     .aboutUs{
         font-size: 80%;
     }
@@ -393,4 +418,111 @@ label{
         width: 80%;
         height: 90%;
     }
+
+    .map{
+        width: 200px;
+        height: 150px;
+    }
+
+    .formu{
+        font-family: 'Lobster', cursive;
+        margin-top: 8%;
+    }
+
+    .th{
+        display: none;
+    }
+
+    .th p{
+        font-size: 90%;
+    }
+
+    .item{
+        flex-direction: column;
+        height: 45%;
+        font-size: 90%;
+    }
+
+    .fotos{
+        width: 100%;
+    }
+    
+    .fotos img{
+        padding: 0% 0 2% 1%;
+        width: 50%;
+        height: 90%;
+        transition: all 1s;
+    }
+    
+    .fotos img:hover{
+        transform: scale(1.8);
+    }
+    
+    .nombre{
+        width: 100%;
+        font-size: 112%;
+        text-decoration: underline;
+    }
+    
+    .ingredientes{
+        width: 100%;
+    }
+    
+    .precio{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width:600px){
+    .header{
+        height: 10vh;
+    }
+    
+    .main{
+        height: 90vh;
+    }
+    
+    .footer{
+        height: 10vh;
+    }
+
+    .map{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width:970px){
+    .header{
+        height: 10vh;
+    }
+    
+    .main{
+        height: 90vh;
+    }
+    
+    .footer{
+        height: 10vh;
+    }
+
+    .map{
+        width: 427px;
+        height: 300px;
+    }
+
+    section{
+        height: 75%;
+        margin-top: 5%;
+    }
+
+    .flexContent{
+        font-size: 110%;
+    }
+
+    .burgers-principal{
+        width: 80%;
+        height: 90%;
+    }
+    
 }

@@ -12,21 +12,23 @@
     <title>Burgerly</title>
 </head>
 <body>
-    <div class="grid-container">
+    <div class="container-fluid">
         <!--HEADER Y LOGO-->
-        <header>
-            <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="Logo"></a></div>
-        </header>
-        <!--MENU DE NAVEGACION-->
-        <nav>
-            <ul class="flex-ul">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="row header">
+            <header class="col-lg-3 col-md-3 col-xs-12 col-sm-4">
+                <div class="logo"><a href="index.html"><img src="../images/logo.png" alt="Logo"></a></div>
+            </header>
+            <!--MENU DE NAVEGACION-->
+            <nav class="col-lg-9 col-md-9 col-xs-12 col-sm-8">
+                    <ul class="flex-ul">
+                        <li><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li><a class="nav-link" href="sucursales.html">Sucursales</a></li>
+                        <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+            </nav>
+        </div>
         <!--CONTENIDO PRINCIPAL-->
         <main>
             <h1>Nuestro Menu</h1>
@@ -68,14 +70,14 @@
             </div>
         </main>  
         <!--PIE DE PAGINA-->  
-        <footer>
-            <div class="firma"><p>Diseñado por Franco Nicolas Silvestro</p><p>Sin fines de Lucro</p></div>
-            <div class="redes" >
+        <footer class="row footer">
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 signature"><p>Diseñado por Franco Nicolas Silvestro</p><p>Sin fines de Lucro</p></div>
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 networks" >
                 <a href="#" class="socials"><img src="../images/instagram.png" alt="Instagram" ></a>
                 <a href="#" class="socials"><img src="../images/twitter.png" alt="Twitter" ></a>
                 <a href="#" class="socials"><img src="../images/facebook.png" alt="Facebook"></a>
             </div>
-            <div class="shortContact"><p>Direccion: Avenida Siempre Viva 123</p><p>Telefono: 4213-1456 </p></div>
+            <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4 shortContacts"><p>Direccion: Avenida Siempre Viva 123</p><p>Telefono: 4213-1456 </p></div>
         </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->
