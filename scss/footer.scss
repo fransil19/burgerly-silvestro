@@ -1,0 +1,38 @@
+@mixin flex($flex-direction,$align-items){
+    display:flex;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+
+footer{
+    width: 100%;
+    @include flex(row,flex-end);
+    flex-wrap: nowrap;
+
+    .signature{
+        padding-left: 1%;
+    }
+
+    .networks{
+        @include flex(row,flex-end);
+        justify-content: center;
+        height: 100%;
+
+        .socials{
+            width: 25%;
+            height: 100%;
+            padding-bottom: 1%;
+
+            img{
+                width: 40%;
+                height: 90%;
+                color:#E6A767;
+            }
+        }
+    }
+
+    .shortContacts{
+        padding-right: 1%;
+        text-align: right;
+    }
+}

@@ -3,7 +3,7 @@
     padding:0px;
 }
 
-body{
+/* body{
     background: linear-gradient(to right, #414345, #232526);
     font-family: 'Cabin', sans-serif;
     height: 100%;
@@ -81,7 +81,7 @@ nav li{
 .nav-link:hover{
     color:rgb(235, 230, 229);
     background-color: #C4823E;
-}
+} */
 
 
 main{
@@ -119,7 +119,7 @@ p{
     margin-bottom: 0;
 }
 
-footer{
+/* footer{
     width: 100%;
     grid-area: footer;
     display:flex;
@@ -175,7 +175,7 @@ footer .shortContact{
     width: 40%;
     height: 90%;
     color:#E6A767;
-}
+} */
 
 section{
     display: flex;
@@ -368,7 +368,7 @@ label{
     }
 
     .header{
-        height: 20vh;
+        height: 25vh;
     }
     
     .main{

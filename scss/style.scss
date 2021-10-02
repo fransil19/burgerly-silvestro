@@ -1,0 +1,26 @@
+$body-background:linear-gradient(to right, #414345, #232526);
+$body-font-family:'Cabin', sans-serif;
+
+$tags: (
+ header: 10vh,
+ main:  80vh,
+ footer: 10vh
+);
+
+body{
+    background: $body-background;
+    font-family: $body-font-family;
+    height: 100%;
+}
+
+@import "header";
+
+@import "footer";
+
+
+@each $name-tag, $height in $tags {
+    .#{$name-tag} {
+        height: $height;
+    }
+}
+ 

@@ -1,0 +1,47 @@
+$anchor:#E6A767;
+$font-lobster:'Lobster', cursive;
+
+header{
+    display: flex;
+    flex-direction: row;
+
+    .logo{
+        width: 25%;
+        padding-left: 1%;
+    }
+    
+    .logo img{
+        width: 80px;
+        height: 80px;
+    }
+    
+    a{
+        color: $anchor;
+        text-decoration: none;
+    }
+}
+
+.flex-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+     width: 100%;
+
+    li{
+        list-style-type: none;
+        font-family: $font-lobster;
+        font-size: medium;
+        text-decoration: none;
+        margin: 2%;
+    }
+}
+
+
+.nav-link{
+    color:#C4823E;
+    transition: all 0.8s;
+    &:hover{
+        color:rgb(235, 230, 229);
+        background-color: #C4823E;
+    }
+}

@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(to right, #414345, #232526);
+  font-family: "Cabin", sans-serif;
+  height: 100%; }
+
+header {
+  display: flex;
+  flex-direction: row; }
+  header .logo {
+    width: 25%;
+    padding-left: 1%; }
+  header .logo img {
+    width: 80px;
+    height: 80px; }
+  header a {
+    color: #E6A767;
+    text-decoration: none; }
+
+.flex-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%; }
+  .flex-ul li {
+    list-style-type: none;
+    font-family: "Lobster", cursive;
+    font-size: medium;
+    text-decoration: none;
+    margin: 2%; }
+
+.nav-link {
+  color: #C4823E;
+  transition: all 0.8s; }
+  .nav-link:hover {
+    color: #ebe6e5;
+    background-color: #C4823E; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: nowrap; }
+  footer .signature {
+    padding-left: 1%; }
+  footer .networks {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%; }
+    footer .networks .socials {
+      width: 25%;
+      height: 100%;
+      padding-bottom: 1%; }
+      footer .networks .socials img {
+        width: 40%;
+        height: 90%;
+        color: #E6A767; }
+  footer .shortContacts {
+    padding-right: 1%;
+    text-align: right; }
+
+.header {
+  height: 10vh; }
+
+.main {
+  height: 80vh; }
+
+.footer {
+  height: 10vh; }
