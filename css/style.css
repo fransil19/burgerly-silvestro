@@ -207,7 +207,7 @@ section{
 
 .formu{
     font-family: 'Lobster', cursive;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 label{
@@ -383,6 +383,10 @@ label{
         justify-content:center;
         width: 100%;
     }
+
+    .flex-ul li {
+        font-size: small;
+        margin: 0px; }
     
     h1{
         font-size:150%;
