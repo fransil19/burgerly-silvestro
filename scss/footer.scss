@@ -19,13 +19,15 @@ footer{
         height: 100%;
 
         .socials{
+            @include flex(row,flex-end);
+            justify-content: center;
             width: 25%;
             height: 100%;
             padding-bottom: 1%;
 
             img{
-                width: 40%;
-                height: 90%;
+                width: 50px;
+                height: 50px;
                 color:#E6A767;
             }
         }
@@ -35,4 +37,62 @@ footer{
         padding-right: 1%;
         text-align: right;
     }
+
+    p{
+        color:burlywood;
+        padding-bottom: 1%;
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width:576px){
+    
+    .signature{
+        text-align: center;
+    }
+
+    footer{
+        .shortContacts{
+            text-align: center;
+        }
+    } 
+
+    .socials{
+        width: 20%;
+        height: 100%;
+        padding-bottom: 1%;
+    }
+
+}
+
+@media only screen and (min-width:576px){
+    
+    .signature{
+        text-align: center;
+    }
+
+    footer{
+        .shortContacts{
+            text-align: center;
+        }
+    } 
+
+    .socials{
+        width: 20%;
+        height: 100%;
+        padding-bottom: 1%;
+    }
+}
+
+@media only screen and (min-width:970px){
+
+    .signature{
+        text-align: left;
+    }
+
+    footer{
+        .shortContacts{
+            text-align: right;
+        }
+    } 
 }

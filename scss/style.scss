@@ -1,11 +1,10 @@
 $body-background:linear-gradient(to right, #414345, #232526);
 $body-font-family:'Cabin', sans-serif;
 
-$tags: (
- header: 10vh,
- main:  80vh,
- footer: 10vh
-);
+*{
+    margin: 0px;
+    padding:0px;
+}
 
 body{
     background: $body-background;
@@ -14,13 +13,5 @@ body{
 }
 
 @import "header";
-
+@import "main";
 @import "footer";
-
-
-@each $name-tag, $height in $tags {
-    .#{$name-tag} {
-        height: $height;
-    }
-}
- 
